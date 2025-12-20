@@ -15,6 +15,23 @@ body {
     justify-content: center;
 }
 
+/* Wrapper geral */
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    max-width: 460px;      /* alinhado ao container */
+    border-radius: 16px;
+    margin-bottom: 96px;   /* 1 polegada */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
 /* Card central */
 .container {
     background: #ffffff;
