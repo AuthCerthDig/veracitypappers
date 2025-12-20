@@ -11,25 +11,17 @@ body {
     min-height: 100vh;
     background: linear-gradient(135deg, #e8e3ff, #f5f7ff);
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Wrapper geral */
-.page-wrapper {
-    width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* Banner */
 .banner {
     width: 100%;
-    max-width: 460px;      /* alinhado ao container */
-    border-radius: 16px;
-    margin-bottom: 96px;   /* 1 polegada */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 460px;
+    margin-bottom: 96px; /* 1 polegada */
+    border-radius: 14px;
 }
 
 /* Card central */
@@ -67,12 +59,6 @@ input#codigo {
     letter-spacing: 2px;
     margin-bottom: 18px;
     outline: none;
-    transition: border 0.3s, box-shadow 0.3s;
-}
-
-input#codigo:focus {
-    border-color: #9f8cff;
-    box-shadow: 0 0 0 3px rgba(159, 140, 255, 0.2);
 }
 
 /* Botão */
@@ -86,12 +72,6 @@ button {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(159, 140, 255, 0.4);
 }
 
 /* Mensagens */
@@ -101,22 +81,18 @@ button:hover {
     line-height: 1.6;
 }
 
-/* Sucesso */
 .mensagem.sucesso {
     color: #1e7e34;
     background: #e6f7ec;
     border-radius: 10px;
     padding: 14px;
-    margin-top: 22px;
 }
 
-/* Erro */
 .mensagem.erro {
     color: #b00020;
     background: #fde8eb;
     border-radius: 10px;
     padding: 14px;
-    margin-top: 22px;
 }
 
 /* Info QR */
