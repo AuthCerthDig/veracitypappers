@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de Documento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Validação de Documento</h1>
+    <p>Digite o código do documento para verificar sua autenticidade.</p>
+
+    <input 
+        type="text" 
+        id="codigo"
+        placeholder="A1B2C3D4E5"
+        maxlength="10"
+        autocomplete="off"
+    >
+
+    <button onclick="validarDocumento()">Validar</button>
+
+    <div id="mensagem" class="mensagem"></div>
+
+    <div class="qr-info">
+        Leitura por QR Code disponível nos documentos oficiais.
+    </div>
+</div>
+
+<script src="assets/js/validar.js"></script>
+</body>
+</html>
