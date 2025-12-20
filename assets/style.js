@@ -1,76 +1,110 @@
-body {
+/* Reset básico */
+* {
+    box-sizing: border-box;
     margin: 0;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #e9d5ff, #dbeafe);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8e3ff, #f5f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card central */
 .container {
     background: #ffffff;
-    padding: 40px;
+    padding: 32px 36px;
+    border-radius: 18px;
     width: 100%;
-    max-width: 420px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    max-width: 460px;
     text-align: center;
+    box-shadow: 0 18px 45px rgba(120, 120, 180, 0.25);
 }
 
-h1 {
-    color: #374151;
+/* Título */
+.container h1 {
+    color: #2c2f6c;
+    margin-bottom: 12px;
 }
 
-p {
-    color: #6b7280;
-    font-size: 14px;
+/* Texto introdutório */
+.container p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
-input {
+/* Campo de código */
+input#codigo {
     width: 100%;
     padding: 14px;
     font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #cfcfff;
     text-align: center;
     letter-spacing: 2px;
-    border-radius: 8px;
-    border: 1px solid #cbd5e1;
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-
-input:focus {
+    margin-bottom: 18px;
     outline: none;
-    border-color: #a78bfa;
-    box-shadow: 0 0 0 2px #ede9fe;
+    transition: border 0.3s, box-shadow 0.3s;
 }
 
+input#codigo:focus {
+    border-color: #9f8cff;
+    box-shadow: 0 0 0 3px rgba(159, 140, 255, 0.2);
+}
+
+/* Botão */
 button {
-    margin-top: 20px;
     width: 100%;
     padding: 14px;
-    background: #a78bfa;
+    background: linear-gradient(135deg, #9f8cff, #b59cff);
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     color: #fff;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-    background: #8b5cf6;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(159, 140, 255, 0.4);
 }
 
+/* Mensagens */
 .mensagem {
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
-.sucesso { color: #16a34a; }
-.erro { color: #dc2626; }
+/* Sucesso */
+.mensagem.sucesso {
+    color: #1e7e34;
+    background: #e6f7ec;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 22px;
+}
 
+/* Erro */
+.mensagem.erro {
+    color: #b00020;
+    background: #fde8eb;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 22px;
+}
+
+/* Info QR */
 .qr-info {
-    margin-top: 25px;
-    font-size: 12px;
-    color: #64748b;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #666;
 }
