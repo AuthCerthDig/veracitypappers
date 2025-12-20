@@ -1,35 +1,47 @@
-function validarDocumento() {
-    const codigo = document.getElementById("codigo").value.trim().toUpperCase();
+async function validarDocumento() {
+    const codigoInput = document.getElementById("codigo");
     const mensagem = document.getElementById("mensagem");
+    const codigo = codigoInput.value.trim().toUpperCase();
 
+    mensagem.className = "mensagem";
     mensagem.innerHTML = "";
 
-    if (!/^[A-Z0-9]{10}$/.test(codigo)) {
-        mensagem.textContent = "Código inválido. Use 10 caracteres alfanuméricos.";
-        mensagem.className = "mensagem erro";
+    if (!codigo || codigo.length !== 10) {
+        mensagem.classList.add("erro");
+        mensagem.innerHTML = "Informe um código válido com 10 caracteres.";
         return;
     }
 
-    fetch("documentos.json")
-        .then(res => res.json())
-        .then(dados => {
-            const doc = dados.find(d => d.codigo === codigo);
+    try {
+        const resposta = await fetch("documentos.json");
+        const documentos = await resposta.json();
 
-            if (doc && doc.status === "VALIDO") {
-                mensagem.innerHTML = `
-                    <strong>DOCUMENTO LOCALIZADO COM SUCESSO! (ATIVO)</strong><br><br>
-                    <strong>CPF nº:</strong> ${doc.cfp}.<br><br>
-                    <strong>Tipo:</strong> ${doc.tipo}<br>
-                    <strong>Data de Emissão:</strong> ${doc.data}
-                `;
-                mensagem.className = "mensagem sucesso";
-            } else {
-                mensagem.textContent = "Documento não encontrado.";
-                mensagem.className = "mensagem erro";
-            }
-        })
-        .catch(() => {
-            mensagem.textContent = "Erro ao acessar os dados de validação.  Exclusivo para emitidos a partir de 01/01/2022 conforme Portaria MEC Nº 554 DE 11 de março 2019.";
-            mensagem.className = "mensagem erro";
-        });
+        const doc = documentos.find(d => d.codigo === codigo);
+
+        if (doc && doc.status === "VALIDO") {
+            mensagem.classList.add("sucesso");
+            mensagem.innerHTML = `
+                <strong>Documento Original Válido</strong><br><br>
+
+                <strong>Instituição Emissora:</strong><br>
+                ${doc.instituicao}<br><br>
+
+                <strong>Curso:</strong><br>
+                ${doc.curso}<br><br>
+
+                <strong>Tipo do Documento:</strong> ${doc.tipo}<br>
+                <strong>Data de Emissão:</strong> ${doc.data}<br>
+                <strong>CPF do Titular:</strong> ${doc.cpf}<br>
+                <strong>Código de Validação:</strong> ${doc.codigo}
+            `;
+        } else {
+            mensagem.classList.add("erro");
+            mensagem.innerHTML = "Documento não localizado ou inválido.";
+        }
+
+    } catch (erro) {
+        mensagem.classList.add("erro");
+        mensagem.innerHTML = "Erro ao consultar a base de dados.";
+        console.error(erro);
+    }
 }
