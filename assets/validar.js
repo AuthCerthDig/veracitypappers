@@ -24,12 +24,12 @@ function validarDocumento() {
                 `;
                 mensagem.className = "mensagem sucesso";
             } else {
-                mensagem.textContent = "Documento não encontrado ou emitidos antes de 01/01/2022 conforme Portaria MEC Nº 554 DE 11 de março 2019..";
+                mensagem.textContent = "Documento não encontrado.";
                 mensagem.className = "mensagem erro";
             }
         })
         .catch(() => {
-            mensagem.textContent = "Erro ao acessar os dados de validação.";
+            mensagem.textContent = "Erro ao acessar os dados de validação.  Exclusivo para emitidos a partir de 01/01/2022 conforme Portaria MEC Nº 554 DE 11 de março 2019.";
             mensagem.className = "mensagem erro";
         });
 }
