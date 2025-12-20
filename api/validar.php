@@ -23,8 +23,12 @@ $codigoInformado = strtoupper(trim($input["codigo"]));
 foreach ($dados as $doc) {
     if ($doc["codigo"] === $codigoInformado) {
         if ($doc["status"] === "VALIDO") {
+            // Retorno personalizado
+            $mensagem = "Documento Original Válido! Esse certificado foi verificado e as informações desse documento são para o CFP *99.*1*.30*-32 .";
+            
             echo json_encode([
                 "status" => "ok",
+                "mensagem" => $mensagem,
                 "tipo_documento" => $doc["tipo_documento"],
                 "data_emissao" => $doc["data_emissao"]
             ]);
