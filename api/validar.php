@@ -1,21 +1,38 @@
 <?php
 header("Content-Type: application/json");
-require "config.php";
 
-$data = json_decode(file_get_contents("php://input"), true);
+// Caminho para o JSON na raiz do projeto
+$arquivo = __DIR__ . "/../documentos.json";
 
-if (!isset($data["codigo"])) {
-    echo json_encode(["status" => "erro"]);
+if (!file_exists($arquivo)) {
+    echo json_encode(["status" => "erro", "mensagem" => "Base de dados não encontrada"]);
     exit;
 }
 
-$codigo = strtoupper($data["codigo"]);
+$dados = json_decode(file_get_contents($arquivo), true);
 
-$stmt = $pdo->prepare("SELECT id FROM documentos WHERE codigo = ? AND status = 'VALIDO'");
-$stmt->execute([$codigo]);
+$input = json_decode(file_get_contents("php://input"), true);
 
-if ($stmt->fetch()) {
-    echo json_encode(["status" => "ok"]);
-} else {
-    echo json_encode(["status" => "invalido"]);
+if (!isset($input["codigo"])) {
+    echo json_encode(["status" => "erro", "mensagem" => "Código não informado"]);
+    exit;
 }
+
+$codigoInformado = strtoupper(trim($input["codigo"]));
+
+foreach ($dados as $doc) {
+    if ($doc["codigo"] === $codigoInformado) {
+        if ($doc["status"] === "VALIDO") {
+            echo json_encode([
+                "status" => "ok",
+                "tipo_documento" => $doc["tipo_documento"],
+                "data_emissao" => $doc["data_emissao"]
+            ]);
+        } else {
+            echo json_encode(["status" => "invalido"]);
+        }
+        exit;
+    }
+}
+
+echo json_encode(["status" => "invalido"]);
