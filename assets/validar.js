@@ -21,7 +21,7 @@ async function validarDocumento() {
         if (doc && doc.status === "VALIDO") {
             mensagem.classList.add("sucesso");
             mensagem.innerHTML = `
-                <strong>Documento Original Válido</strong><br><br>
+                <strong>DOCUMENTO LOCALIZADO COM SUCESSO! (ATIVO)</strong><br><br>
 
                 <strong>Instituição Emissora:</strong><br>
                 ${doc.instituicao}<br><br>
