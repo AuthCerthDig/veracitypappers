@@ -18,7 +18,7 @@ function validarDocumento() {
             if (doc && doc.status === "VALIDO") {
                 mensagem.innerHTML = `
                     <strong>DOCUMENTO LOCALIZADO COM SUCESSO! (ATIVO)</strong><br><br>
-                     Documento Original. Validação exclusiva para o <strong>CPF nº ${doc.cfp}.</strong><br><br>
+                    <strong>CPF nº:</strong> ${doc.cfp}.<br><br>
                     <strong>Tipo:</strong> ${doc.tipo}<br>
                     <strong>Data de Emissão:</strong> ${doc.data}
                 `;
