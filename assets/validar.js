@@ -13,11 +13,7 @@ async function validarDocumento() {
     }
 
     try {
-        const resposta = await fetch("documentos.json");
-
-        if (!resposta.ok) {
-            throw new Error("Falha ao carregar documentos.json");
-        }
+        const resposta = await fetch("../documentos.json");
 
         const documentos = await resposta.json();
 
@@ -47,6 +43,6 @@ async function validarDocumento() {
     } catch (erro) {
         mensagem.classList.add("erro");
         mensagem.innerHTML = "Erro ao consultar a base de dados.";
-        console.error("Erro técnico:", erro);
+        console.error(erro);
     }
 }
