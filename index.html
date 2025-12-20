@@ -31,5 +31,14 @@
 </div>
 
 <script src="assets/js/validar.js"></script>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const codigo = params.get("codigo");
+
+    if (codigo) {
+        document.getElementById("codigo").value = codigo.toUpperCase();
+    }
+</script>
+
 </body>
 </html>
