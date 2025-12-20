@@ -13,7 +13,7 @@ async function validarDocumento() {
     }
 
     try {
-        const resposta = await fetch("./documentos.json");
+        const resposta = await fetch("documentos.json");
 
         if (!resposta.ok) {
             throw new Error("Falha ao carregar documentos.json");
