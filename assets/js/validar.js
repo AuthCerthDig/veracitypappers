@@ -20,7 +20,8 @@ function validarDocumento() {
     .then(res => res.json())
     .then(data => {
         if (data.status === "ok") {
-            mensagem.textContent = "Documento válido e autêntico.";
+            // Mostra a mensagem personalizada
+            mensagem.textContent = data.mensagem;
             mensagem.className = "mensagem sucesso";
         } else {
             mensagem.textContent = "Documento não encontrado ou inválido.";
