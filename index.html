@@ -2,49 +2,53 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Validação de Documentos Acadêmicos</title>
+    <title>Validador Digital</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="page-wrapper">
 
-    <img src="assets/img/banner.jpeg" alt="Banner institucional" class="banner">
+    <!-- Banner -->
+    <img src="assets/banner.jpeg" alt="Banner institucional" class="banner">
 
-    
-  <div class="container">
-    <h2>Validador de Diploma Digital e Histórico Escolar</h2>
-    <p>Digite o código do documento para verificar sua autenticidade.</p>
+    <!-- Card central -->
+    <div class="container">
+        <h1>Validador de Diploma Digital e Histórico Escolar</h1>
+        <p>Digite o código do documento para verificar sua autenticidade.</p>
 
-    <input 
-        type="text" 
-        id="codigo"
-        placeholder="A1B2C3D4E5"
-        maxlength="10"
-        autocomplete="off"
-    >
+        <input
+            type="text"
+            id="codigo"
+            placeholder="A1B2C3D4E5"
+            maxlength="10"
+            autocomplete="off"
+        >
 
-    <button onclick="validarDocumento()">Validar</button>
+        <button onclick="validarDocumento()">Validar</button>
 
-    <div id="mensagem" class="mensagem"></div>
+        <div id="mensagem" class="mensagem"></div>
 
-    <div class="qr-info">
-        Leitura por QR Code disponível nos documentos oficiais.
+        <div class="qr-info">
+            Leitura por QR Code disponível nos documentos oficiais.
+        </div>
     </div>
-  </div>
-</div>
 
-
-<script src="assets/validar.js"></script>
+    <script src="assets/validar.js"></script>
     <script>
-    const params = new URLSearchParams(window.location.search);
-    const codigo = params.get("codigo");
+        const params = new URLSearchParams(window.location.search);
+        const codigo = params.get("codigo");
 
-    if (codigo) {
-        document.getElementById("codigo").value = codigo.toUpperCase();
-    }
-</script>
+        if (codigo) {
+            document.getElementById("codigo").value = codigo.toUpperCase();
+        }
+    </script>
+
+
+        if (codigo) {
+            document.getElementById("codigo").value = codigo.toUpperCase();
+        }
+    </script>
 
 </body>
 </html>
