@@ -1,5 +1,4 @@
 [
-  /* ===================== UNIFAVENI ===================== */
   {
     "codigo": "A9F3K7Q2M8",
     "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
@@ -64,7 +63,6 @@
     "status": "VALIDO"
   },
 
-  /* ===================== FABRAS ===================== */
   {
     "codigo": "Q3K8A9F7M2",
     "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
@@ -120,7 +118,6 @@
     "status": "VALIDO"
   },
 
-  /* ===================== CPET ===================== */
   {
     "codigo": "M9F8Q7A2K3",
     "instituicao": "(24087947) CPET - Centro de Profissionalização e Educação Técnica",
@@ -158,7 +155,6 @@
     "status": "VALIDO"
   },
 
-  /* ===================== MICROCAMP ===================== */
   {
     "codigo": "K3M9A7Q2F8",
     "instituicao": "(10478) MICROCAMP ESCOLA DE EDUCAÇÃO PROFISSIONAL",
