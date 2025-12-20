@@ -1,5 +1,5 @@
 Options -Indexes
 
-<FilesMatch "\.(jdon|sql|php)$">
+<FilesMatch "\.(sql|php)$">
     Require all denied
 </FilesMatch>
