@@ -1,0 +1,22 @@
+[
+  { "codigo": "A9F3K7Q2M8", "tipo_documento": "Declaração", "data_emissao": "2025-01-10", "status": "VALIDO" },
+  { "codigo": "B4Z8W2L9P1", "tipo_documento": "Certificado", "data_emissao": "2025-01-11", "status": "VALIDO" },
+  { "codigo": "X7M2Q9A5K8", "tipo_documento": "Histórico", "data_emissao": "2025-01-12", "status": "VALIDO" },
+  { "codigo": "R5C8F1Z2W9", "tipo_documento": "Declaração", "data_emissao": "2025-01-13", "status": "CANCELADO" },
+  { "codigo": "K3P7A9M4X2", "tipo_documento": "Certificado", "data_emissao": "2025-01-14", "status": "VALIDO" },
+  { "codigo": "Q8Z1F6C9A5", "tipo_documento": "Histórico", "data_emissao": "2025-01-15", "status": "VALIDO" },
+  { "codigo": "M2K7X8P4R9", "tipo_documento": "Declaração", "data_emissao": "2025-01-16", "status": "VALIDO" },
+  { "codigo": "W9A5Q2F8Z1", "tipo_documento": "Certificado", "data_emissao": "2025-01-17", "status": "CANCELADO" },
+  { "codigo": "C7R4M9P2A8", "tipo_documento": "Histórico", "data_emissao": "2025-01-18", "status": "VALIDO" },
+  { "codigo": "Z1X5K8Q9F2", "tipo_documento": "Declaração", "data_emissao": "2025-01-19", "status": "VALIDO" },
+  { "codigo": "P8M2A9R7K5", "tipo_documento": "Certificado", "data_emissao": "2025-01-20", "status": "VALIDO" },
+  { "codigo": "F9Q1Z8C2W4", "tipo_documento": "Histórico", "data_emissao": "2025-01-21", "status": "VALIDO" },
+  { "codigo": "A5M7K9P2X8", "tipo_documento": "Declaração", "data_emissao": "2025-01-22", "status": "CANCELADO" },
+  { "codigo": "R9C4Z1A8Q5", "tipo_documento": "Certificado", "data_emissao": "2025-01-23", "status": "VALIDO" },
+  { "codigo": "X2P9M5K7F8", "tipo_documento": "Histórico", "data_emissao": "2025-01-24", "status": "VALIDO" },
+  { "codigo": "K8A9Z4R2C5", "tipo_documento": "Declaração", "data_emissao": "2025-01-25", "status": "VALIDO" },
+  { "codigo": "Q7F8X9M1A2", "tipo_documento": "Certificado", "data_emissao": "2025-01-26", "status": "VALIDO" },
+  { "codigo": "W5P9K2C8R4", "tipo_documento": "Histórico", "data_emissao": "2025-01-27", "status": "CANCELADO" },
+  { "codigo": "M9Z8A2F5Q1", "tipo_documento": "Declaração", "data_emissao": "2025-01-28", "status": "VALIDO" },
+  { "codigo": "C2R5K9X8A7", "tipo_documento": "Certificado", "data_emissao": "2025-01-29", "status": "VALIDO" }
+]
