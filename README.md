@@ -7,8 +7,6 @@ código alfanumérico ou QR Code.
 - HTML5
 - CSS3
 - JavaScript
-- PHP
-- MySQL
 
 ## Segurança
-A validação real ocorre exclusivamente no backend.
+A validação real ao lado do servidor.
