@@ -1,3 +1,4 @@
+
 /* Reset básico */
 * {
     box-sizing: border-box;
@@ -8,107 +9,120 @@
 
 /* Fundo da página */
 body {
-  background-image: url("https://authcerthdig.github.io/veracitypappers/assets/img/veracityback.jpeg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-image: url("https://authcerthdig.github.io/veracitypappers/assets/img/veracityback.jpeg");
+    background-size: cover;           /* Ocupa toda a tela */
+    background-position: center;      /* Centraliza a imagem */
+    background-repeat: no-repeat;     /* Evita repetição */
+    min-height: 100vh;                /* Altura total da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;                    /* Espaço interno para não colar nas bordas */
 }
 
 /* Banner */
 .banner {
     width: 100%;
-    max-width: 460px;
-    margin-bottom: 96px; /* 1 polegada */
-    border-radius: 14px;
+    max-width: 320px;                 /* Reduz para não ficar gigante */
+    margin-bottom: 40px;              /* Espaço proporcional */
+    border-radius: 12px;
 }
 
 /* Card central */
 .container {
     background: #ffffff;
-    padding: 32px 36px;
-    border-radius: 18px;
+    padding: 24px 28px;               /* Ajuste para não ficar exagerado */
+    border-radius: 16px;
     width: 100%;
-    max-width: 460px;
+    max-width: 360px;                 /* Reduz largura para ficar proporcional */
     text-align: center;
-    box-shadow: 0 18px 45px rgba(120, 120, 180, 0.25);
+    box-shadow: 0 12px 30px rgba(120, 120, 180, 0.25);
 }
 
 /* Título */
-.container h1 {
+.container h2 {
     color: #2c2f6c;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /* Texto introdutório */
 .container p {
     color: #555;
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 16px;
 }
 
 /* Campo de código */
 input#codigo {
     width: 100%;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
     border: 1px solid #cfcfff;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     outline: none;
 }
 
 /* Botão */
 button {
     width: 100%;
-    padding: 14px;
-    background: linear-gradient(135deg, #9EEB47, #9EEB47); /* Verde R158 G235 B71 */
+    padding: 12px;
+    background: linear-gradient(135deg, #9EEB47, #9EEB47);
     border: none;
-    border-radius: 12px;
-    color: #000; /* Texto preto para contraste */
-    font-size: 16px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8fd63f, #8fd63f);
 }
 
 /* Mensagens */
 .mensagem {
-    margin-top: 22px;
-    font-size: 15px;
-    line-height: 1.6;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .mensagem.sucesso {
     color: #1e7e34;
     background: #e6f7ec;
-    border-radius: 10px;
-    padding: 14px;
+    border-radius: 8px;
+    padding: 12px;
 }
 
 .mensagem.erro {
     color: #b00020;
     background: #fde8eb;
-    border-radius: 10px;
-    padding: 14px;
+    border-radius: 8px;
+    padding: 12px;
 }
 
 /* Info QR */
 .qr-info {
-    margin-top: 22px;
-    font-size: 13px;
+    margin-top: 18px;
+    font-size: 12px;
     color: #666;
 }
-/* Lista horizontal e centralizada */
+
+/* Footer links */
 .footer-nav {
-  display: flex;         /* Deixa os itens em linha */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 20px;             /* Espaçamento entre os links */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
 }
 
-/* Estilo dos links */
 .footer-nav a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: white;          /* Texto branco */
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
 }
