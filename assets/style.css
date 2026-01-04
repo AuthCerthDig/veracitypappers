@@ -106,8 +106,15 @@ button {
     color: #666;
 }
 footer {
-    background-color: #ffffff; /* fundo branco */
-    color: #000000; /* texto preto para contraste */
-    padding: 20px 0; /* espaçamento interno opcional */
+    color: #ffffff; /* cor do texto branca */
     text-align: center; /* centraliza o conteúdo */
+}
+
+footer a {
+    color: #ffffff; /* links brancos */
+    text-decoration: none; /* remove sublinhado, opcional */
+}
+
+footer a:hover {
+    text-decoration: underline; /* efeito ao passar o mouse */
 }
