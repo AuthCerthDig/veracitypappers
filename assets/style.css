@@ -69,10 +69,10 @@ input#codigo {
 button {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, #9f8cff, #b59cff);
+    background: linear-gradient(135deg, #9EEB47, #9EEB47); /* Verde R158 G235 B71 */
     border: none;
     border-radius: 12px;
-    color: #fff;
+    color: #000; /* Texto preto para contraste */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -104,4 +104,10 @@ button {
     margin-top: 22px;
     font-size: 13px;
     color: #666;
+}
+footer {
+    background-color: #ffffff; /* fundo branco */
+    color: #000000; /* texto preto para contraste */
+    padding: 20px 0; /* espaçamento interno opcional */
+    text-align: center; /* centraliza o conteúdo */
 }
