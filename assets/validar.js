@@ -1,4 +1,3 @@
-
 async function validarDocumento() {
   const codigoInput = document.getElementById("codigo");
   const mensagem = document.getElementById("mensagem");
