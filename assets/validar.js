@@ -13,7 +13,7 @@ async function validarDocumento() {
     }
 
     try {
-        const resposta = await fetch("/documentos.json");
+        const resposta = await fetch(".//documentos.json");
         const documentos = await resposta.json();
         const doc = documentos.find(d => d.codigo === codigo);
 
