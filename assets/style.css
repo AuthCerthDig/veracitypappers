@@ -8,12 +8,16 @@
 
 /* Fundo da página */
 body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #e8e3ff, #f5f7ff);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("https://authcerthdig.github.io/veracitypappers/assets/img/veracityback.jpe");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Banner */
