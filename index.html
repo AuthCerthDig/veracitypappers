@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,7 +10,6 @@
     <img src="assets/img/banner.svg" alt="Banner institucional" class="banner">
         <h2>Validador Digital Acadêmico</h2>
         <p>Digite o código do documento para verificar sua autenticidade.</p>
-
         <input
             type="text"
             id="codigo"
@@ -19,20 +17,12 @@
             maxlength="10"
             autocomplete="off"
         >
-
         <button id="btn-validar">Validar</button>
-
         <div id="mensagem" class="mensagem"></div>
-
         <div class="qr-info">
             Leitura por QR Code disponível nos documentos oficiais.
         </div>
     </div>
-
-    <!-- JS principal -->
-    assets/validar.js</script>
-
-    <!-- Bloco único para QR + Enter + clique -->
     <script>
       window.addEventListener('DOMContentLoaded', () => {
         const params = new URLSearchParams(window.location.search);
@@ -63,8 +53,8 @@
         }
       });
     </script>
-
-<br> <br>
+<br>
+  <br>
     <br>
     <br>
   <footer>
