@@ -1,16 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Validador Digital</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/style.css">
+    assets/style.css
 </head>
 <body>
 
     <!-- Banner -->
-    <img src="assets/img/banner.svg" alt="Banner institucional" class="banner">
+    assets/img/banner.svg
 
     <!-- Card central -->
     <div class="container">
@@ -25,7 +25,7 @@
             autocomplete="off"
         >
 
-        <button onclick="validarDocumento()">Validar</button>
+        <button id="btn-validar">Validar</button>
 
         <div id="mensagem" class="mensagem"></div>
 
@@ -34,15 +34,39 @@
         </div>
     </div>
 
-    <script src="assets/validar.js"></script>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const codigo = params.get("codigo");
+    <!-- JS principal -->
+    <script srcdar.js</script>
 
-        if (codigo) {
-            document.getElementById("codigo").value = codigo.toUpperCase();
+    <!-- Bloco único para QR + Enter + clique -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const codigo = (params.get("codigo") || "").toUpperCase().trim();
+        const campo = document.getElementById("codigo");
+        const btn = document.getElementById("btn-validar");
+
+        if (codigo && campo) {
+          campo.value = codigo;
+          if (typeof window.validarDocumento === "function") {
+            window.validarDocumento();
+          }
         }
- 
+
+        if (campo) {
+          campo.addEventListener("keydown", (ev) => {
+            if (ev.key === "Enter") {
+              ev.preventDefault();
+              if (typeof window.validarDocumento === "function") {
+                window.validarDocumento();
+              }
+            }
+          });
+        }
+
+        if (btn && typeof window.validarDocumento === "function") {
+          btn.addEventListener("click", () => window.validarDocumento());
+        }
+      });
     </script>
 <br>
     <br>
