@@ -69,9 +69,13 @@ body {
     font-size: 15px;
     margin-bottom: 22px;
 }
-
+.container p {
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 8px;
+}
 /* =========================
-   INPUT E BOTÃO
+   INPUT  BOTÃO  E TERMOS
 ========================= */
 input#codigo,
 button {
@@ -107,6 +111,16 @@ button:hover {
     background: #8fd63f;
 }
 
+link {
+    text-align: center;
+    font-size: 8px;
+    color: #cfd8dc;padding: 12px;
+    font-size: 8px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
 /* =========================
    MENSAGENS
 ========================= */
@@ -140,21 +154,21 @@ button:hover {
 }
 
 /* =========================
-   RODAPÉ
+  TERMO E PRIVACIDADE
 ========================= */
-.footer {
+.target.blank {
   margin-top: 30px;
   text-align: center;
-  font-size: 13px;
+  font-size: 10px;
   color: #cfd8dc;
 }
 
-.footer a {
+.a {
   color: #cfd8dc;
   text-decoration: none;
 }
 
-.footer a:hover {
+.a:hover {
   text-decoration: underline;
 }
 
