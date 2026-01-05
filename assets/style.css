@@ -111,21 +111,23 @@ button:hover {
    MENSAGENS
 ========================= */
 .mensagem {
-    margin-top: 14px;
-    font-size: 14px;
-    color: #ffffff;
+  margin-top: 15px;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .mensagem.sucesso {
-    background: rgba(158, 235, 71, 0.18);
-    padding: 12px;
-    border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #2e7d32;
 }
 
 .mensagem.erro {
-    background: rgba(255, 255, 255, 0.12);
-    padding: 12px;
-    border-radius: 8px;
+  background: #ffffff;
+  color: #b71c1c;
+  border: 2px solid #b71c1c;
 }
 
 /* =========================
@@ -140,31 +142,19 @@ button:hover {
 /* =========================
    RODAPÉ
 ========================= */
-footer {
-    text-align: center;
-    padding: 20px;
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #cfd8dc;
 }
 
-footer a {
-    color: #e5ffe0;
-    text-decoration: none;
-    font-size: 13px;
+.footer a {
+  color: #cfd8dc;
+  text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer a:hover {
+  text-decoration: underline;
 }
 
-/* =========================
-   PÁGINAS INSTITUCIONAIS
-   (TERMS / PRIVACY)
-========================= */
-.pagina-institucional {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 36px;
-    background: #ffffff;
-    color: #222;
-    border-radius: 14px;
-    line-height: 1.6;
-}
