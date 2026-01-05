@@ -1,4 +1,6 @@
-/* Reset básico */
+/* =========================
+   RESET GLOBAL
+========================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,108 +8,163 @@
     font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-/* Fundo da página */
+/* =========================
+   BACKGROUND PADRÃO
+   (TODAS AS PÁGINAS)
+========================= */
 body {
-    background-image: url("https://authcerthdig.github.io/veracitypappers/assets/img/veracityback.jpeg");
+    min-height: 100vh;
+    background-image: url("img/veracityback.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* =========================
+   PÁGINA VALIDADOR (INDEX)
+========================= */
+.pagina-validador {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 24px;
 }
 
-/* Banner */
+/* =========================
+   CARD CENTRAL
+========================= */
+.container {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    padding: 28px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 14px 32px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   BANNER / LOGO
+========================= */
 .banner {
     width: 100%;
-    max-width: 280px; /* Reduz tamanho do banner */
-    margin-bottom: 30px;
-    border-radius: 12px;
+    max-width: 260px;
+    margin-bottom: 26px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
 }
 
-/* Card central */
-.container {
-    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente para destacar no background */
-    padding: 24px 28px;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 360px; /* Ajuste proporcional */
-    text-align: center;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Título */
+/* =========================
+   TEXTOS
+========================= */
 .container h2 {
-    color: #fff; /* Texto branco */
+    color: #ffffff;
     font-size: 22px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-/* Texto introdutório */
 .container p {
-    color: #fff; /* Texto branco */
+    color: #e5ffe0;
     font-size: 15px;
-    margin-bottom: 24px; /* Maior distância do input */
+    margin-bottom: 22px;
 }
 
-/* Campo de código */
+/* =========================
+   INPUT E BOTÃO
+========================= */
+input#codigo,
+button {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 14px auto;
+    display: block;
+}
+
 input#codigo {
-    width: 90%; /* Reduz largura para não ficar exagerado */
     padding: 12px;
     font-size: 15px;
     border-radius: 8px;
-    border: 1px solid #cfcfff;
+    border: none;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 16px;
     outline: none;
 }
 
-/* Botão */
 button {
-    width: 90%; /* Reduz largura */
     padding: 12px;
-    background: linear-gradient(135deg, #9EEB47, #9EEB47);
-    border: none;
-    border-radius: 10px;
+    background: #9EEB47;
     color: #000;
     font-size: 15px;
     font-weight: 600;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 button:hover {
-    background: linear-gradient(135deg, #8fd63f, #8fd63f);
+    background: #8fd63f;
 }
 
-/* Mensagens */
+/* =========================
+   MENSAGENS
+========================= */
 .mensagem {
-    margin-top: 18px;
+    margin-top: 14px;
     font-size: 14px;
-    line-height: 1.4;
+    color: #ffffff;
 }
 
 .mensagem.sucesso {
-    color: #1e7e34;
-    background: #e6f7ec;
-    border-radius: 8px;
+    background: rgba(158, 235, 71, 0.18);
     padding: 12px;
+    border-radius: 8px;
 }
 
 .mensagem.erro {
-    color: #b00020;
-    background: #fde8eb;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
     padding: 12px;
+    border-radius: 8px;
 }
 
-/* Info QR */
+/* =========================
+   INFO QR
+========================= */
 .qr-info {
-    margin-top: 18px;
+    margin-top: 16px;
     font-size: 12px;
-    color: #fff; /* Texto branco para combinar */
+    color: #e5ffe0;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #e5ffe0;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PÁGINAS INSTITUCIONAIS
+   (TERMS / PRIVACY)
+========================= */
+.pagina-institucional {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 36px;
+    background: #ffffff;
+    color: #222;
+    border-radius: 14px;
+    line-height: 1.6;
 }
