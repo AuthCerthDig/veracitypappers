@@ -1,52 +1,60 @@
-
 async function validarDocumento() {
-  const codigoInput = document.getElementById("codigo");
-  const mensagem = document.getElementById("mensagem");
-  const codigo = codigoInput.value.trim().toUpperCase();
+    const codigoInput = document.getElementById("codigo");
+    const mensagem = document.getElementById("mensagem");
 
-  mensagem.className = "mensagem";
-  mensagem.innerHTML = "";
+    const codigo = codigoInput.value.trim().toUpperCase();
 
-  if (!codigo || codigo.length !== 10) {
-    mensagem.classList.add("erro");
-    mensagem.innerHTML = "Informe um código válido com 10 caracteres.";
-    return;
-  }
+    mensagem.className = "mensagem";
+    mensagem.innerHTML = "";
 
-  try {
-    const resposta = await fetch("./documentos.json"); // Caminho correto para GitHub Pages
-    if (!resposta.ok) {
-      throw new Error(`Erro ao carregar documentos.json (HTTP ${resposta.status})`);
+    if (!codigo || codigo.length !== 10) {
+        mensagem.classList.add("erro");
+        mensagem.textContent = "Informe um código válido com 10 caracteres.";
+        return;
     }
 
-    const documentos = await resposta.json();
-    const doc = documentos.find(d => (d.codigo || "").trim().toUpperCase() === codigo);
+    try {
+        // ✅ CAMINHO CORRETO CONFORME SUA ÁRVORE
+        const resposta = await fetch("documentos.json", { cache: "no-store" });
 
-    const statusOk = doc && typeof doc.status === "string" &&
-                     ["VALIDO", "VÁLIDO"].includes(doc.status.normalize("NFC").toUpperCase().trim());
+        if (!resposta.ok) {
+            throw new Error(`HTTP ${resposta.status}`);
+        }
 
-    if (statusOk) {
-      mensagem.classList.add("sucesso");
-      mensagem.innerHTML = `
-        <strong>DOCUMENTO LOCALIZADO COM SUCESSO! (ATIVO)</strong><br><br>
-        <strong>Instituição Emissora:</strong><br>${doc.instituicao}<br><br>
-        <strong>Curso:</strong><br>${doc.curso}<br><br>
-        <strong>Tipo do Documento:</strong> ${doc.tipo}<br>
-        <strong>Data de Emissão:</strong> ${doc.data}<br>
-        <strong>CPF do Titular:</strong> ${doc.cpf}<br>
-        <strong>Código de Validação:</strong> ${doc.codigo}
-      `;
-    } else {
-      mensagem.classList.add("erro");
-      mensagem.innerHTML = "Documento não localizado ou inválido.";
+        const documentos = await resposta.json();
+
+        const doc = documentos.find(d =>
+            String(d.codigo).trim().toUpperCase() === codigo
+        );
+
+        if (!doc) {
+            mensagem.classList.add("erro");
+            mensagem.textContent = "Documento não localizado ou inválido.";
+            return;
+        }
+
+        if (doc.status !== "VALIDO") {
+            mensagem.classList.add("erro");
+            mensagem.textContent = "Documento localizado, porém inválido.";
+            return;
+        }
+
+        mensagem.classList.add("sucesso");
+        mensagem.innerHTML = `
+            <strong>DOCUMENTO LOCALIZADO COM SUCESSO (ATIVO)</strong><br><br>
+            <strong>Instituição Emissora:</strong><br>${doc.instituicao}<br><br>
+            <strong>Curso:</strong><br>${doc.curso}<br><br>
+            <strong>Tipo do Documento:</strong> ${doc.tipo}<br>
+            <strong>Data de Emissão:</strong> ${doc.data}<br>
+            <strong>CPF do Titular:</strong> ${doc.cpf}<br>
+            <strong>Código de Validação:</strong> ${doc.codigo}
+        `;
+
+    } catch (erro) {
+        console.error("Erro ao validar:", erro);
+        mensagem.classList.add("erro");
+        mensagem.textContent = "Erro ao consultar a base de dados.";
     }
-
-  } catch (erro) {
-    mensagem.classList.add("erro");
-    mensagem.innerHTML = "Erro ao consultar a base de dados.";
-    console.error(erro);
-  }
 }
 
-// Expor globalmente
 window.validarDocumento = validarDocumento;
