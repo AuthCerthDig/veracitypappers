@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador Digital Acadêmico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <main class="pagina-validador">
+        <section class="container">
+
+            <img
+                src="assets/img/banner.jpeg"
+                alt="Veracity Pappers"
+                class="banner"
+            >
+
+            <h2>Validador Digital Acadêmico</h2>
+            <p>Digite o código do documento para verificar sua autenticidade.</p>
+
+            <input
+                type="text"
+                id="codigo"
+                placeholder="A1B2C3D4E5"
+                maxlength="10"
+                autocomplete="off"
+            >
+
+            <button onclick="validarDocumento()">Validar</button>
+
+            <div id="mensagem" class="mensagem"></div>
+
+            <div class="qr-info">
+                Leitura por QR Code disponível nos documentos oficiais.
+            </div>
+
+        </section>
+    </main>
+<main class="qr-info">
+  <a href="Termos_e_Condicoes_VeracityPappers.pdf" target="_blank">
+    Termos de Uso
+  </a>
+  |
+  <a href="Politica_de_Privacidade_VeracityPappers.pdf" target="_blank">
+    Política de Privacidade
+  </a>
+</main>
+
+<script src="assets/validar.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const codigo = params.get("codigo");
+    if (codigo) {
+        document.getElementById("codigo").value = codigo.toUpperCase();
+    }
+    <script src="assets/validar.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const codigo = params.get("codigo");
+
+        if (codigo) {
+            document.getElementById("codigo").value = codigo.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>
