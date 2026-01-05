@@ -1,240 +1,89 @@
-/* =========================
-   RESET GLOBAL
-========================= */
+/* ===== RESET BÁSICO ===== */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-/* =========================
-   BACKGROUND PADRÃO
-   (TODAS AS PÁGINAS)
-========================= */
 body {
-    min-height: 100vh;
-    background-image: url("img/veracityback.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* ===== PÁGINAS LEGAIS (TERMOS / PRIVACIDADE) ===== */
-
-.legal-page {
-    min-height: 100vh;
-    background: url("assets/img/veracityback.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.legal-container {
-    background: rgba(255, 255, 255, 0.94); /* camada clara */
-    max-width: 900px;
-    width: 100%;
-    padding: 50px 60px;
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-    color: #000;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
+    background: #f4f6f8;
+    color: #222;
 }
 
-.legal-container h1 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    color: #0a2e3b;
-}
-
-.legal-container h2 {
-    font-size: 22px;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    color: #0a2e3b;
-}
-
-
-
-/* =========================
-   PÁGINA VALIDADOR (INDEX)
-========================= */
-.pagina-validador {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-}
-
-/* =========================
-   CARD CENTRAL
-========================= */
-/* Container geral da index */
-.container {
-    width: 100%;
-    max-width: 460px;        /* equilíbrio ideal para formulário */
-    padding: 26px 28px;
-    margin: auto;
-    text-align: center;
-    border-radius: 16px;
-}
-
-/* Campo de código e botão */
-#codigo,
-button {
-    width: 100%;
-    max-width: 360px;        /* mantém proporção e não “estoura” */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Card de retorno (resultado da validação) */
-.mensagem {
-    margin-top: 18px;
-    width: 100%;
-    max-width: 520px;        /* MAIS LARGO para leitura */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px 18px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: left;        /* leitura melhor */
-}
-
-/* Sucesso: fundo branco, texto preto (seriedade) */
-.mensagem.sucesso {
-    background: #ffffff;
-    color: #000000;
-    border: 1px solid #e0e0e0;
-}
-
-/* Erro: discreto, sem “gritar” */
-.mensagem.erro {
-    background: #fff5f5;
-    color: #8a1f1f;
-    border: 1px solid #f1c4c4;
-}
-
-
-/* =========================
-   BANNER / LOGO
-========================= */
+/* ===== BANNER ===== */
 .banner-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.banner {
-  width: 100%;
-  max-width: 520px; /* acompanha o retorno */
+.banner-wrapper img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
 }
 
-
-/* =========================
-   TEXTOS
-========================= */
-.container h2 {
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 10px;
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+    max-width: 520px;   /* controla largura do layout */
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.container p {
-    color: #e5ffe0;
-    font-size: 15px;
-    margin-bottom: 22px;
+.container h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-/* =========================
-   INPUT  BOTÃO  E TERMOS
-========================= */
-input#codigo,
+/* ===== CAMPO DE CÓDIGO ===== */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+/* ===== BOTÃO ===== */
 button {
     width: 100%;
-    max-width: 280px;
-    margin: 0 auto 14px auto;
-    display: block;
-}
-
-input#codigo {
     padding: 12px;
-    font-size: 15px;
-    border-radius: 8px;
+    font-size: 16px;
+    background: #1e3a8a;
+    color: #fff;
     border: none;
-    text-align: center;
-    letter-spacing: 2px;
-    outline: none;
-}
-
-button {
-    padding: 12px;
-    background: #9EEB47;
-    color: #000;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #8fd63f;
+    background: #16306f;
 }
 
-/* =========================
-   MENSAGENS
-========================= */
-.mensagem {
-  margin-top: 15px;
-  padding: 18px;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 1.6;
+/* ===== TERMOS E PRIVACIDADE ===== */
+.termos-privacidade {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 30px; /* afasta da borda inferior */
+    font-weight: bold;
 }
 
-.mensagem.sucesso {
-  background: #ffffff;
-  color: #000000;
-  border: 2px solid #2e7d32;
+.termos-privacidade a {
+    color: #1e3a8a;
+    text-decoration: none;
+    margin: 0 6px;
 }
 
-.mensagem.erro {
-  background: #ffffff;
-  color: #b71c1c;
-  border: 2px solid #b71c1c;
+.termos-privacidade a:hover {
+    text-decoration: underline;
 }
-
-/* =========================
-   INFO QR
-========================= */
-.qr-info {
-    margin-top: 16px;
-    font-size: 12px;
-    color: #e5ffe0;
-}
-
-/* =========================
-  TERMO E PRIVACIDADE
-========================= */
-.Politica_de_Privacidade_VeracityPappers{
-  margin-top: 30px;
-  text-align: center;
-  font-size: 10px;
-  color: #cfd8dc;
-}
-
-.a {
-  color: #cfd8dc;
-  text-decoration: none;
-}
-
-.a:hover {
-  text-decoration: underline;
-}
-
