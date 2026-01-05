@@ -2,14 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Validador Digital</title>
+    <title>Validador Digital Acadêmico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <!-- Banner -->
-    <img src="assets/img/banner.svg" alt="Banner institucional" class="banner">
+
+<body class="pagina-validador">
+
+    <main class="container">
+        <img src="assets/img/banner.svg" alt="Banner institucional" class="banner">
+
         <h2>Validador Digital Acadêmico</h2>
         <p>Digite o código do documento para verificar sua autenticidade.</p>
 
@@ -28,24 +30,23 @@
         <div class="qr-info">
             Leitura por QR Code disponível nos documentos oficiais.
         </div>
-    </div>
-  <script src="assets/validar.js"> </script>
-  <script>
+    </main>
+
+    <footer>
+        <p>
+            <a href="terms.html" target="_blank">Termos de Uso</a> |
+            <a href="privacy.html" target="_blank">Política de Privacidade</a>
+        </p>
+    </footer>
+
+    <script src="assets/validar.js"></script>
+    <script>
         const params = new URLSearchParams(window.location.search);
         const codigo = params.get("codigo");
-
         if (codigo) {
             document.getElementById("codigo").value = codigo.toUpperCase();
         }
     </script>
-    <br>
-  <br>
-    <br>
-    <br>
-  <footer>
-  <ul class="footer-nav">
-    <p><a href="https://authcerthdig.github.io/veracitypappers/terms.html" target="_blank">Termos de Uso</a> |  <a href="https://authcerthdig.github.io/veracitypappers/privacy.html" target="_blank">Política de Privacidade</a></p>
-  </ul>
-</footer>
+
 </body>
 </html>
