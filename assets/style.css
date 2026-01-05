@@ -56,16 +56,7 @@ body {
     color: #0a2e3b;
 }
 
-.legal-container p,
-.legal-container li {
-    font-size: 16px;
-    color: #000;
-}
 
-.legal-container ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
 
 /* =========================
    PÁGINA VALIDADOR (INDEX)
@@ -116,11 +107,7 @@ body {
     font-size: 15px;
     margin-bottom: 22px;
 }
-.container p {
-    color: #ffffff;
-    font-size: 8px;
-    margin-bottom: 8px;
-}
+
 /* =========================
    INPUT  BOTÃO  E TERMOS
 ========================= */
@@ -158,16 +145,6 @@ button:hover {
     background: #8fd63f;
 }
 
-link {
-    text-align: center;
-    font-size: 8px;
-    color: #cfd8dc;padding: 12px;
-    font-size: 8px;
-    border-radius: 8px;
-    border: none;
-    text-align: center;
-    transition: background 0.3s ease;
-}
 /* =========================
    MENSAGENS
 ========================= */
@@ -203,7 +180,7 @@ link {
 /* =========================
   TERMO E PRIVACIDADE
 ========================= */
-.target.blank {
+.Politica_de_Privacidade_VeracityPappers{
   margin-top: 30px;
   text-align: center;
   font-size: 10px;
