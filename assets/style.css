@@ -72,26 +72,68 @@ body {
 /* =========================
    CARD CENTRAL
 ========================= */
+/* Container geral da index */
 .container {
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(6px);
-    padding: 28px;
-    border-radius: 18px;
     width: 100%;
-    max-width: 380px;
+    max-width: 460px;        /* equilíbrio ideal para formulário */
+    padding: 26px 28px;
+    margin: auto;
     text-align: center;
-    box-shadow: 0 14px 32px rgba(0,0,0,0.4);
+    border-radius: 16px;
 }
+
+/* Campo de código e botão */
+#codigo,
+button {
+    width: 100%;
+    max-width: 360px;        /* mantém proporção e não “estoura” */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card de retorno (resultado da validação) */
+.mensagem {
+    margin-top: 18px;
+    width: 100%;
+    max-width: 520px;        /* MAIS LARGO para leitura */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;        /* leitura melhor */
+}
+
+/* Sucesso: fundo branco, texto preto (seriedade) */
+.mensagem.sucesso {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+}
+
+/* Erro: discreto, sem “gritar” */
+.mensagem.erro {
+    background: #fff5f5;
+    color: #8a1f1f;
+    border: 1px solid #f1c4c4;
+}
+
 
 /* =========================
    BANNER / LOGO
 ========================= */
-.banner {
-    width: 100%;
-    max-width: 260px;
-    margin-bottom: 26px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+.banner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.banner {
+  width: 100%;
+  max-width: 520px; /* acompanha o retorno */
+}
+
 
 /* =========================
    TEXTOS
