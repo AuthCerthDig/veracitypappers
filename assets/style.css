@@ -19,6 +19,53 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* ===== PÁGINAS LEGAIS (TERMOS / PRIVACIDADE) ===== */
+
+.legal-page {
+    min-height: 100vh;
+    background: url("assets/img/veracityback.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.legal-container {
+    background: rgba(255, 255, 255, 0.94); /* camada clara */
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 60px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+.legal-container h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #0a2e3b;
+}
+
+.legal-container h2 {
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #0a2e3b;
+}
+
+.legal-container p,
+.legal-container li {
+    font-size: 16px;
+    color: #000;
+}
+
+.legal-container ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
 /* =========================
    PÁGINA VALIDADOR (INDEX)
