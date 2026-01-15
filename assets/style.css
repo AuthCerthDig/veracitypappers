@@ -73,21 +73,24 @@ button {
 button:hover {
     background: #16306f;
 }
-
 /* ===== TERMOS E PRIVACIDADE ===== */
 .termos-privacidade {
     text-align: center;
     margin-top: 24px;
-    margin-bottom: 30px; /* afasta da borda inferior */
+    margin-bottom: 30px;
     font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    color: #fff; /* cor base */
 }
-
-.termos-privacidade a {
-    color: #1e3a8a;
+.termos-privacidade a,
+.termos-privacidade a:visited,
+.termos-privacidade a:active,
+.termos-privacidade a:focus {
+    color: #fff;
     text-decoration: none;
-    margin: 0 6px;
 }
 
 .termos-privacidade a:hover {
     text-decoration: underline;
+    color: #e5e7eb; /* branco levemente acinzentado */
 }
