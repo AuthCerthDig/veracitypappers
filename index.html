@@ -33,19 +33,16 @@
         </a>
     </main>
 
-    <!-- SCRIPTS -->
-   <script src="assets/validar.js"></script>
+<!-- SCRIPTS -->
+<script src="assets/validar.js"></script>
 <script>
- 
-        const params = new URLSearchParams(window.location.search);
-        const codigo = params.get("codigo");
+    const params = new URLSearchParams(window.location.search);
+    const codigo = params.get("codigo");
 
-        if (codigo) {
-            document.getElementById("codigo").value = codigo.toUpperCase();
-        }
+    if (codigo) {
+        document.getElementById("codigo").value = codigo.toUpperCase();
+}
 </script>
-
-
 </body>
 </html>
 
