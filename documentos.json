@@ -1,185 +1,74 @@
 [
   {
     "codigo": "A9F3K7Q2M8",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "15/08/2013",
+    "registro": "REG-2013-0001",
+    "livro": "Livro 12",
+    "folha": "178",
+    "instituicao": "CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
+    "codigo_mec": "3294",
+    "curso": "Licenciatura em Química",
+    "grau": "Licenciado(a)",
+    "modalidade": "Graduação Presencial",
+    "carga_horaria": "3200 horas",
+    "data_conclusao": "30/07/2013",
+    "data_emissao": "15/08/2013",
+    "nome_titular": "Nome do Titular",
     "cpf": "299.XXX.308.XX",
+    "tipo_documento": "Diploma",
     "status": "VALIDO"
   },
-  {
-    "codigo": "B7Q2M8A9F3",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "10/09/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "K3M9A2Q7F8",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "05/10/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "Q8F7A9M2K3",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "10/11/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "M2A9F8Q7K3",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "10/12/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "F8K3Q7M2A9",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "20/09/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "9A2F7KQ3M8",
-    "instituicao": "(3294) CENTRO UNIVERSITÁRIO FAVENI - UNIFAVENI",
-    "curso": "Química – Graduação / Licenciatura Plena",
-    "tipo": "Diploma",
-    "data": "30/10/2013",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-
   {
     "codigo": "Q3K8A9F7M2",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "10/02/2020",
+    "registro": "REG-2020-0045",
+    "livro": "Livro 03",
+    "folha": "092",
+    "instituicao": "FACULDADE IBRA DE BRASÍLIA - FABRAS",
+    "codigo_mec": "3854",
+    "curso": "Gestão de Tecnologia da Informação",
+    "grau": "Especialista",
+    "modalidade": "Pós-Graduação Lato Sensu",
+    "carga_horaria": "420 horas",
+    "data_conclusao": "20/12/2019",
+    "data_emissao": "10/02/2020",
+    "nome_titular": "Nome do Titular",
     "cpf": "299.XXX.308.XX",
+    "tipo_documento": "Certificado de Pós-Graduação",
     "status": "VALIDO"
   },
-  {
-    "codigo": "7M2FQ8A9K3",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "15/07/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "K8Q3F9M2A7",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "10/02/2021",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "A2M7Q9K8F3",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "20/11/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "F7A3K9M2Q8",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "01/06/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "Q9K8F2A7M3",
-    "instituicao": "(3854) FACULDADE IBRA DE BRASÍLIA - FABRAS",
-    "curso": "Gestão de Tecnologia da Informação – Especialização",
-    "tipo": "Certificado de Pós-Graduação",
-    "data": "15/01/2021",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-
   {
     "codigo": "M9F8Q7A2K3",
-    "instituicao": "(24087947) CPET - Centro de Profissionalização e Educação Técnica",
-    "curso": "Técnico em Turismo / Educação Profissional Técnica",
-    "tipo": "Certificado Técnico",
-    "data": "25/01/2020",
+    "registro": "REG-2020-0102",
+    "livro": "Livro 07",
+    "folha": "055",
+    "instituicao": "CPET - Centro de Profissionalização e Educação Técnica",
+    "codigo_mec": "24087947",
+    "curso": "Técnico em Turismo",
+    "grau": "Técnico",
+    "modalidade": "Educação Profissional Técnica",
+    "carga_horaria": "1200 horas",
+    "data_conclusao": "15/01/2020",
+    "data_emissao": "25/01/2020",
+    "nome_titular": "Nome do Titular",
     "cpf": "299.XXX.308.XX",
+    "tipo_documento": "Certificado Técnico",
     "status": "VALIDO"
   },
-  {
-    "codigo": "8A9KQF3M27",
-    "instituicao": "(24087947) CPET - Centro de Profissionalização e Educação Técnica",
-    "curso": "Técnico em Turismo / Educação Profissional Técnica",
-    "tipo": "Certificado Técnico",
-    "data": "10/02/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "3K7M2A9QF8",
-    "instituicao": "(24087947) CPET - Centro de Profissionalização e Educação Técnica",
-    "curso": "Técnico em Turismo / Educação Profissional Técnica",
-    "tipo": "Certificado Técnico",
-    "data": "20/02/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "F2Q8A9M3K7",
-    "instituicao": "(24087947) CPET - Centro de Profissionalização e Educação Técnica",
-    "curso": "Técnico em Turismo / Educação Profissional Técnica",
-    "tipo": "Certificado Técnico",
-    "data": "30/01/2020",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-
   {
     "codigo": "K3M9A7Q2F8",
-    "instituicao": "(10478) MICROCAMP ESCOLA DE EDUCAÇÃO PROFISSIONAL",
-    "curso": "Técnico em Informática / Educação Profissional Técnica",
-    "tipo": "Certificado Profissional",
-    "data": "15/11/1999",
+    "registro": "REG-1999-0785",
+    "livro": "Livro 01",
+    "folha": "211",
+    "instituicao": "MICROCAMP ESCOLA DE EDUCAÇÃO PROFISSIONAL",
+    "codigo_mec": "10478",
+    "curso": "Técnico em Informática",
+    "grau": "Técnico",
+    "modalidade": "Educação Profissional Técnica",
+    "carga_horaria": "1000 horas",
+    "data_conclusao": "05/11/1999",
+    "data_emissao": "15/11/1999",
+    "nome_titular": "Nome do Titular",
     "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "9QF7M2A8K3",
-    "instituicao": "(10478) MICROCAMP ESCOLA DE EDUCAÇÃO PROFISSIONAL",
-    "curso": "Técnico em Informática / Educação Profissional Técnica",
-    "tipo": "Certificado Profissional",
-    "data": "20/11/1999",
-    "cpf": "299.XXX.308.XX",
-    "status": "VALIDO"
-  },
-  {
-    "codigo": "M8A9QK7F23",
-    "instituicao": "(10478) MICROCAMP ESCOLA DE EDUCAÇÃO PROFISSIONAL",
-    "curso": "Técnico em Informática / Educação Profissional Técnica",
-    "tipo": "Certificado Profissional",
-    "data": "10/12/1999",
-    "cpf": "299.XXX.308.XX",
+    "tipo_documento": "Certificado Profissional",
     "status": "VALIDO"
   }
 ]
