@@ -94,3 +94,69 @@ button:hover {
     text-decoration: underline;
     color: #e5e7eb; /* branco levemente acinzentado */
 }
+/* ===== RESULTADO DE VALIDAÇÃO (ESTILO ACADÊMICO) ===== */
+
+#mensagem {
+    margin-top: 20px;
+}
+
+/* Caixa estilo documento oficial */
+.validacao-box {
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    padding: 30px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #222;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Título principal */
+.validacao-box h2 {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Texto institucional */
+.validacao-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+/* Separadores */
+.validacao-box hr {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin: 20px 0;
+}
+
+/* Assinatura eletrônica */
+.validacao-box .assinatura {
+    margin-top: 30px;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Mensagem de erro */
+.mensagem.erro {
+    margin-top: 20px;
+    padding: 16px;
+    background: #fff5f5;
+    border: 1px solid #e0b4b4;
+    color: #8a1e1e;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Mensagem de sucesso */
+.mensagem.sucesso {
+    margin-top: 20px;
+}
