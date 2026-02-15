@@ -39,17 +39,19 @@ async function validarDocumento() {
             return;
         }
 
-        // ✅ RESULTADO ESTILO INSTITUCIONAL
+        // ✅ RESULTADO INSTITUCIONAL COMPLETO
         mensagem.classList.add("sucesso");
         mensagem.innerHTML = `
             <div class="validacao-box">
+
                 <h2>Certidão de Autenticidade Documental</h2>
 
                 <p>
-                    Certificamos, para os devidos fins, que o documento acadêmico
-                    abaixo identificado encontra-se devidamente registrado nos
-                    arquivos institucionais, estando em plena validade na data
-                    desta consulta.
+                    Certificamos, para os devidos fins, que o(a) Sr.(a) 
+                    <strong>${doc.nome_titular}</strong>, inscrito(a) no CPF 
+                    ${doc.cpf}, concluiu regularmente o curso abaixo especificado,
+                    encontrando-se o respectivo documento devidamente registrado
+                    nesta instituição de ensino.
                 </p>
 
                 <hr>
@@ -57,24 +59,40 @@ async function validarDocumento() {
                 <p><strong>Instituição de Ensino:</strong><br>
                 ${doc.instituicao}</p>
 
+                <p><strong>Código MEC:</strong> ${doc.codigo_mec}</p>
+
                 <p><strong>Curso:</strong> ${doc.curso}</p>
 
-                <p><strong>Tipo do Documento:</strong> ${doc.tipo}</p>
+                <p><strong>Grau Conferido:</strong> ${doc.grau}</p>
 
-                <p><strong>Data de Emissão:</strong> ${doc.data}</p>
+                <p><strong>Modalidade:</strong> ${doc.modalidade}</p>
+
+                <p><strong>Carga Horária Total:</strong> ${doc.carga_horaria}</p>
 
                 <hr>
 
-                <p><strong>CPF do Titular:</strong> ${doc.cpf}</p>
+                <p><strong>Data de Conclusão:</strong> ${doc.data_conclusao}</p>
+
+                <p><strong>Data de Emissão:</strong> ${doc.data_emissao}</p>
+
+                <p><strong>Tipo de Documento:</strong> ${doc.tipo_documento}</p>
+
+                <hr>
+
+                <p><strong>Registro Acadêmico:</strong> ${doc.registro}</p>
+
+                <p><strong>Livro:</strong> ${doc.livro} &nbsp;&nbsp; 
+                <strong>Folha:</strong> ${doc.folha}</p>
+
+                <hr>
 
                 <p><strong>Código de Validação:</strong> ${doc.codigo}</p>
-
-                <hr>
 
                 <p class="assinatura">
                     Documento validado eletronicamente em 
                     ${new Date().toLocaleDateString()}.
                 </p>
+
             </div>
         `;
 
