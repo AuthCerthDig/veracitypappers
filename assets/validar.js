@@ -14,7 +14,7 @@ async function validarDocumento() {
     }
 
     try {
-        // ✅ CAMINHO CORRETO CONFORME SUA ÁRVORE
+
         const resposta = await fetch("documentos.json", { cache: "no-store" });
 
         if (!resposta.ok) {
@@ -39,15 +39,43 @@ async function validarDocumento() {
             return;
         }
 
+        // ✅ RESULTADO ESTILO INSTITUCIONAL
         mensagem.classList.add("sucesso");
         mensagem.innerHTML = `
-            <strong>DOCUMENTO LOCALIZADO COM SUCESSO (ATIVO)</strong><br><br>
-            <strong>Instituição Emissora:</strong><br>${doc.instituicao}<br><br>
-            <strong>Curso:</strong><br>${doc.curso}<br><br>
-            <strong>Tipo do Documento:</strong> ${doc.tipo}<br>
-            <strong>Data de Emissão:</strong> ${doc.data}<br>
-            <strong>CPF do Titular:</strong> ${doc.cpf}<br>
-            <strong>Código de Validação:</strong> ${doc.codigo}
+            <div class="validacao-box">
+                <h2>Certidão de Autenticidade Documental</h2>
+
+                <p>
+                    Certificamos, para os devidos fins, que o documento acadêmico
+                    abaixo identificado encontra-se devidamente registrado nos
+                    arquivos institucionais, estando em plena validade na data
+                    desta consulta.
+                </p>
+
+                <hr>
+
+                <p><strong>Instituição de Ensino:</strong><br>
+                ${doc.instituicao}</p>
+
+                <p><strong>Curso:</strong> ${doc.curso}</p>
+
+                <p><strong>Tipo do Documento:</strong> ${doc.tipo}</p>
+
+                <p><strong>Data de Emissão:</strong> ${doc.data}</p>
+
+                <hr>
+
+                <p><strong>CPF do Titular:</strong> ${doc.cpf}</p>
+
+                <p><strong>Código de Validação:</strong> ${doc.codigo}</p>
+
+                <hr>
+
+                <p class="assinatura">
+                    Documento validado eletronicamente em 
+                    ${new Date().toLocaleDateString()}.
+                </p>
+            </div>
         `;
 
     } catch (erro) {
