@@ -89,8 +89,7 @@ async function validarDocumento() {
                 <p><strong>Código de Validação:</strong> ${doc.codigo}</p>
 
                <p class="assinatura">
-    Dados extraidos do documento original microfilmado pela VeracityPappers<sup>®</sup>
-.Co.</p>
+    Doocumento original microfilmado. Assinatura digital VeracityPappers<sup>®</sup></p>
                <p> Documento validado eletronicamente em ${new Date().toLocaleDateString()}.
 </p>
 
