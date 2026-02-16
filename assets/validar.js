@@ -51,7 +51,7 @@ async function validarDocumento() {
                     <strong>${doc.nome_titular}</strong>, inscrito(a) no CPF 
                     ${doc.cpf}, concluiu regularmente o curso abaixo especificado,
                     encontrando-se o respectivo documento devidamente registrado
-                    nesta instituição de ensino.
+                    nesta de ensino.
                 </p>
 
                 <hr>
@@ -88,10 +88,11 @@ async function validarDocumento() {
 
                 <p><strong>Código de Validação:</strong> ${doc.codigo}</p>
 
-                <p class="assinatura">
-                    Documento validado eletronicamente em 
-                    ${new Date().toLocaleDateString()}.
-                </p>
+               <p class="assinatura">
+    Dados extraidos do documento original microfilmado pela VeracityPappers<sup>®</sup>
+.Co.
+    Documento validado eletronicamente em ${new Date().toLocaleDateString()}.
+</p>
 
             </div>
         `;
