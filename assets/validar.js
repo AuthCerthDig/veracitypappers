@@ -90,8 +90,8 @@ async function validarDocumento() {
 
                <p class="assinatura">
     Dados extraidos do documento original microfilmado pela VeracityPappers<sup>®</sup>
-.Co.
-    Documento validado eletronicamente em ${new Date().toLocaleDateString()}.
+.Co.</p>
+               <p> Documento validado eletronicamente em ${new Date().toLocaleDateString()}.
 </p>
 
             </div>
